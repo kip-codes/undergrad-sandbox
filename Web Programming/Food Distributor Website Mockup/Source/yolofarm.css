@@ -1,0 +1,211 @@
+/* CSS file for Yolo Farm to Fork page layout */
+
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: #f7ecd0;
+    min-height: 100vh;
+    display: block;
+    flex-direction: row;
+    color: #554118;
+}
+
+img#logoIcon {
+    background-color: #f7ecd0;
+    /*max-height: 147px;*/
+    /*max-width: 300px;*/
+    /*width: 50%;*/
+    float: left; /* causes the logo to shift above body */
+}
+
+img#menuIcon {
+    background-color: #f7ecd0;
+    width: 30px;
+    display: none;
+    margin-left: auto;
+    align-self: flex-end;  /* puts at end of row */
+    float: right;
+    /*padding-top: px;*/
+}
+
+button.dir {
+    background-color: transparent;
+    color: #554118;
+    outline: none;
+    border: none;
+    flex-grow: 1;
+    padding: 10px 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: small;
+    float: right;
+}
+
+button.dir:hover {
+    background-color: #f7ecd0;
+    color: #554118;
+}
+
+button.dir#workaround:hover {
+    background-color: #79b638;
+}
+
+button.dir#workaround {
+    flex-grow: 2;
+}
+
+button.dir#fat {
+    /*padding-left: 300px;*/
+}
+
+button.dir#search {
+    background-color: #d7ebc7;
+    /*padding-bottom: 10px;*/
+}
+
+button.links {
+    border-radius: 50px;
+    float: right;
+    background-color: #305928;
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+input.search {
+    border-radius: 50px;
+    background-color: #d7ebc7;
+    color: ghostwhite;
+    outline: none;
+    border: none;
+    margin: 5px;
+    margin-right: 20px;
+    padding: 5px 2px;
+}
+
+nav {
+    background-color: #79b638;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    text-align: right;
+    /*padding: 10px;*/
+    justify-content: flex-start;
+}
+
+div.mobile {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    img#menuIcon {
+        display: block;
+    }
+    img#logoIcon {
+        display: block;
+    }
+    div.mobile {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    p.mission {
+        display: none;
+    }
+    p#fancy {
+        display: none;
+    }
+    div.desktop {
+        display: none;
+    }
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+p.mission {
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    font-style: normal;
+    font-weight: 100;
+}
+
+p.ourmission {
+    font-weight: 700;
+}
+
+p#fancy {
+    font-family: 'Yellowtail', cursive;
+    font-size: xx-large;
+    color: #a69a75;
+    text-align: center;
+    font-weight: 100;
+    opacity: 0.7;
+
+}
+
+header {
+    display: flex;
+}
+
+footer {
+    background-color: #305928;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+}
+
+main {
+    padding: 25px 125px;
+}
+
+/* From tutorial */
+
+/*html, body, div, span, applet, object, iframe,*/
+/*h1, h2, h3, h4, h5, h6, p, blockquote, pre,*/
+/*a, abbr, acronym, address, big, cite, code,*/
+/*del, dfn, em, img, ins, kbd, q, s, samp,*/
+/*small, strike, strong, sub, sup, tt, var,*/
+/*b, u, i, center,*/
+/*dl, dt, dd, ol, ul, li,*/
+/*fieldset, form, label, legend,*/
+/*table, caption, tbody, tfoot, thead, tr, th, td,*/
+/*article, aside, canvas, details, embed,*/
+/*figure, figcaption, footer, header, hgroup,*/
+/*menu, nav, output, ruby, section, summary,*/
+/*time, mark, audio, video {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*border: 0;*/
+    /*!*font-size: 100%;*!*/
+    /*!*font: inherit;*!*/
+    /*vertical-align: baseline;*/
+/*}*/
+/*!* HTML5 display-role reset for older browsers *!*/
+/*article, aside, details, figcaption, figure,*/
+/*footer, header, hgroup, menu, nav, section {*/
+    /*display: block;*/
+/*}*/
+/*body {*/
+    /*line-height: 1;*/
+/*}*/
+/*ol, ul {*/
+    /*list-style: none;*/
+/*}*/
+/*blockquote, q {*/
+    /*quotes: none;*/
+/*}*/
+/*blockquote:before, blockquote:after,*/
+/*q:before, q:after {*/
+    /*content: '';*/
+    /*content: none;*/
+/*}*/
+/*table {*/
+    /*border-collapse: collapse;*/
+    /*border-spacing: 0;*/
+/*}*/

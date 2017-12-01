@@ -1,0 +1,144 @@
+/* CSS file for Weather App page layout */
+
+
+@media (max-width: 480px) {
+
+}
+
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    min-height: 100vh;
+    /*background-color: ivory;*/
+    background: #427fab; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#427fab, #2f295c); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#427fab, #2f295c); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#427fab, #2f295c); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#427fab, #2f295c); /* Standard syntax (must be last) */
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background: transparent;
+    margin: 50px;
+    font-size: x-large;
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+#aroundAll {
+    /*margin: 50px;*/
+}
+
+#range {
+    /*padding: 10px;*/
+    /*border-width: 5px;*/
+    /*border-color: #aaaa00;*/
+    /*border-style: solid;*/
+    /*border-radius: 25px;*/
+    /*background-color: #6666ee;*/
+    overflow: hidden;   /* let slider disappear off end */
+    /* flexbox */
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;  /* fat as window! */
+    /*margin: 10px;*/
+}
+
+.stepper {
+    height: 225px;
+    width: 150px;
+    border-color:white;
+    border-width:2px;
+    border-style: solid;
+    border-radius: 25px;
+    background-color: #427fab;
+
+    /* spacing inside slider controlled by Javascript */
+    position: relative;
+
+    /* animate transition when left changes */
+    transition-property: left;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+
+    /* flexbox for contents */
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.forecast {
+    margin: 10px;
+    border-color: black;
+    border-width:2px;
+    border-style: solid;
+    border-radius: 25px;
+    color: white;
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*padding: 5px;*/
+}
+
+#scroll {
+    margin-top: 20px;
+    display: inline-block;
+    justify-content: space-between;
+    align-self: stretch;  /* fat as window! */
+
+    border-color: green;
+    border-width: 2px;
+    border-style:solid;
+}
+
+button {
+    /*border-width: 1px;*/
+    border-color: #427fab;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #427fab;
+    position: relative;
+    color: #27224d;
+    float: inherit;
+    /*float: left;*/
+    margin: 5px;
+    /*padding: 5px;*/
+}
+
+#lbutton{
+    float:left;
+    color: whitesmoke;
+    /*padding: 1px;*/
+    /*border-color: white;*/
+    /*border-width: 2px;*/
+    /*border-style: solid;*/
+}
+
+#ltext{
+}
+
+#rbutton{
+    float:right;
+    color: whitesmoke;
+    /*padding: 1px;*/
+    /*border-color: white;*/
+    /*border-width: 2px;*/
+    /*border-style: solid;*/
+}
+
+#clearbutton{
+    clear: both;
+}
+
+
+

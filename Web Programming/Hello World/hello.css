@@ -1,0 +1,21 @@
+body { background-color: lightgray; }
+div { background-color: ivory; max-width:25%}
+
+img.resize{
+    max-width:30%;
+    max-height:30%;
+}
+
+div.container {
+    position: absolute;
+    border: 3px solid #092C36;
+    left: 37%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+p.oblique {
+    font-family: "Courier New", "Times New Roman", serif;
+    font-style: oblique
+}

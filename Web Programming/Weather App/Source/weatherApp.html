@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="weatherApp.css">
+</head>
+<body onload = "init.init()">
+    <div id="">
+
+    </div>
+
+
+    <main> <!-- The Weather Application -->
+        <div id="todayContainer1">
+            <div class="today" id="todayDate">
+
+            </div>
+            <div class="today">
+                <div id="search">
+                    <input type="text" id="zip"> <img id ="search" src = "Forecast_Search.svg" onclick='control.lookupWoeid()'>
+                </div>
+                <div id="searchbutton">
+
+                </div>
+            </div>
+
+        </div>
+        <div id="todayContainer2">
+            <div class="focus">
+
+            </div>
+            <div class="focus">
+
+            </div>
+            <div class="focus">
+
+            </div>
+        </div>
+        <div id="range"> <!-- Should just be the single horizontal box -->
+            <div class="stepper" id="day0">
+                <div class="forecast">
+                    <p>Wds 1
+                        <br/>Suck my ass because you're no good -- better than anyone else
+                        <br/>owo &#xb0;
+                    </p>
+                </div>
+            </div>
+            <div class="stepper" id="day1">
+                <div class="forecast">
+                    <p>Wds 2
+                        <br/>Suck my ass because you're no good -- better than anyone else
+                        <br/>owo &#xb0;
+                    </p>
+                </div>
+            </div>
+            <div class="stepper" id="day2">
+                <div class="forecast">
+                    <p>Wds 3
+                        <br/>Suck my ass because you're no good -- better than anyone else
+                        <br/>owo &#xb0;
+                    </p>
+                </div>
+            </div>
+            <div class="stepper" id="day3">
+                <div class="forecast">
+                    <p>Wds 4
+                        <br/>Suck my ass because you're no good -- better than anyone else
+                        <br/>owo &#xb0;
+                    </p>
+                </div>
+            </div>
+            <div class="stepper" id="day4">
+                <div class="forecast">
+                    <p>Wds 5
+                        <br/>Suck my ass because you're no good -- better than anyone else
+                        <br/>owo &#xb0;
+                    </p>
+                </div>
+            </div>
+            <div class="stepper" id="day5">
+                <div class="forecast">
+                    <p>Wds 6
+                        <br/>Suck my ass because you're no good -- better than anyone else
+                        <br/>owo &#xb0;
+                    </p>
+                </div>
+            </div>
+            <div class="stepper" id="day6">
+                <div class="forecast">
+                    <p>Wds 7
+                        <br/>Suck my ass because you're no good -- better than anyone else
+                        <br/>owo &#xb0;
+                    </p>
+                </div>
+            </div>
+            <div class="stepper" id="day7">
+                <div class="forecast">
+                    <p>Wds 8
+                        <br/>Suck my ass because you're no good -- better than anyone else
+                        <br/>owo &#xb0;
+                    </p>
+                </div>
+            </div>
+            <div class="stepper" id="day9">
+                <div class="forecast">
+                    <p>Wds 10
+                        <br/>Suck my ass because you're no good -- better than anyone else
+                        <br/>owo &#xb0;
+                    </p>
+                </div>
+            </div>
+
+            <!-- Include more days here, up to day9 -->
+        </div>
+        <div id="scroll">
+            <div id="lbutton">
+                <button id="left" onclick="view.buttonActionL()"> < </button>
+                previous forecasts
+            </div>
+            <div id="rbutton">
+                more forecasts
+                <button id="right" onclick="view.buttonActionR()"> > </button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="weatherApp.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+body {
+     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	min-height: 98vh;  
+	background-color: ivory;
+	/* flexbox */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+     }
+
+main {
+	background-color: #dd5566;
+	margin: 20px;
+	font-size: x-large;
+	/* flexbox */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	align-self: stretch;
+}
+
+#range {
+	padding: 10px;
+	border-width: 5px;
+	border-color: #aaaa00;
+	border-style: solid;
+	background-color: #6666ee;
+	overflow: hidden;   /* let slider disappear off end */
+	/* flexbox */
+	display: flex;
+	flex-direction: row;
+	align-self: stretch;  /* fat as window! */
+}
+
+#stepper {
+	height: 200px; 
+	width: 200px; 
+	background-color: #008888;
+
+	/* spacing inside slider controlled by Javascript */
+	position: relative;
+	
+	/* animate transition when left changes */
+	transition-property: left;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+
+	/* flexbox for contents */
+	display: flex;
+	flex-shrink: 0;
+}
+
+.forecast {
+	margin: 10px;
+	color: white;
+	/* flexbox */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+button {
+	border-width: 4px;
+	border-color: #aaaa00;
+	border-style: solid;
+	border-radius: 10px;
+	background-color: #ff7788;
+}
+
+
+

@@ -1,0 +1,45 @@
+body {
+     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	min-height: 100vh;  
+	background: linear-gradient(#2E85B9, #19173C);
+	/* flexbox */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+     }
+
+main {
+	padding: 40px;
+	/* flexbox */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	align-self: stretch;
+}
+
+button {
+	border-width: 4px;
+	border-color: #aaaa00;
+	border-style: solid;
+	border-radius: 10px;
+	background-color: #ff7788;
+	font-size: large;
+}
+
+input {
+	font-size: large;
+}
+
+p {
+	color: white;
+	font-size: large;
+	padding: 60px;
+	border-style: solid;
+	border-color: orange;
+}
+
+
+
