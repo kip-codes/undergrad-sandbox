@@ -1,0 +1,65 @@
+Key:
+
+<date> <time> : Time when pushed to GDrive (contains most recent changes)
+*<#> : Important changes
+<#> : Minor changes
+[.h] : References to the header file of the same base
+
+* * * * * * * * * * * * * * *
+
+9/1/2016 4:11am
+
+Dispatcher.cpp:
+1. Added assert header file for SWITCH in SetMap().
+1b. Added other necessary libraries for existing function calls with missing references.
+2. Corrected syntax errors in SetMap().
+*3. Changed reference to member instead of global object.
+4. Changed unknown reference from m_index to m_taxis.
+*5. Started UpdateTaxis().
+
+Graph.cpp:
+*1. Drafted AddEdge().
+2. [.h] Added list of nodes.
+3. [.h] Added startVert to EDGE.
+
+Taxi.cpp:
+*1. Started MoveTimeStep().
+
+
+* * * * *
+
+9/2/2016 11:30pm
+
+Graph.cpp:
+*. Corrected syntax errors that prevented compilation.
+1. [.h] Changed list<CGraphNode> to vector<CGraphNode>.
+1b. Changed nodeset to m_nodeVect.
+2. Added necessary libraries (e.g., queue, vector).
+3. Finished GetEdgeLength()
+
+Taxi.cpp:
+
+None.
+
+Dispatcher.cpp:
+
+None.
+
+
+* * * * *
+
+9/4/2016 12:19am
+
+Graph.cpp:
+*1. Removed vector parameter in CalcShortestPath().
+1b. Changed if-conditions.
+1c. Changed return condition.
+*2. Added function GetSize() to return m_size.
+
+Taxi.cpp:
+1. Removed vector parameter for CalShortestPath() call.
+*2. Added function GetRoute() to populate m_route.
+*3. Added helper function PrintRoute().
+
+Dispatcher.cpp:
+*1. Added ProcessCall().
